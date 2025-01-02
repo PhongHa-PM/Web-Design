@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image" href="./img/logo.jpg">
+
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap Link -->
+
+    <!-- Font Awesome Boxicon Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Font Awesome Cdn -->
+    <!-- link css -->
+    <link rel="stylesheet" href="./css/booking.css">
+    <link rel="stylesheet" href="./css/nav-bar.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/reponsive.css">
+    <!-- link css -->
+
+    <!-- Link Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Link Animation -->
+
+    <title>Vivu 24h Camping</title>
+</head>
+
+<body>
+    {
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="./User-Index.html" id="logo"><img class="img-logo"
+                    src="./img/logo-removebg.png" alt=""><span>V</span>ivu <span>24</span>h</a>
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#mynavbar">
+                <span><i class="fa-solid fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./User-Index.html">Trang Chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active-nav" href="./User-Booking.html">Đặt Tour</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="nav-link btn shadow-none border-0" type="" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Các Gói Camping<i class='bx bxs-chevron-down'></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end mt-2">
+                                <li><a class="dropdown-item nav-link" href="./User-PG_HoTriAn.html">Hồ Trị An</a></li>
+                                <li><a class="dropdown-item nav-link" href="./User-PG_HoDauTieng.html">Hồ Dầu Tiếng</a>
+                                </li>
+                                <li><a class="dropdown-item nav-link" href="./User-PG_HoCoc.html">Hồ Cốc</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./User-Gallary.html">Hình Ảnh</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="nav-link btn shadow-none border-0" type="" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Về Chúng Tôi<i class='bx bxs-chevron-down'></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end mt-2">
+                                <li><a class="dropdown-item nav-link" href="./User-AboutUs.html">Giới Thiệu</a></li>
+                                <li><a class="dropdown-item nav-link" href="./User-Contact.html">Liên Hệ</a></li>
+                                <li><a class="dropdown-item nav-link" href="./User-FeedBack.html">FeedBack</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <a href="./User-Contact.html"><button class="btn btn-primary shadow-none border-0" type="button">Liên
+                        hệ: 0941544737</button></a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Section Book Start -->
+    <section class="book" id="book">
+        <div class="container">
+
+            <div class="main-text" id='booking'style="margin-top: 60px;">
+                <h1 class="text-center" style="padding-top: 30px;"><span>BOOKING</span></h1>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-12" data-aos="zoom-in-up" data-aos-duration="900" data-aos-offset="100"
+                            data-aos-delay="50"><img src="./img/booking/1.jpg" alt=""></div>
+                        <div class="col-4" data-aos="zoom-in-up" data-aos-duration="900" data-aos-offset="100"
+                            data-aos-delay="100"><img src="./img/booking/2.jpg" alt=""></div>
+                        <div class="col-4" data-aos="zoom-in-up" data-aos-duration="900" data-aos-offset="100"
+                            data-aos-delay="150"><img src="./img/booking/3.jpg" alt=""></div>
+                        <div class="col-4" data-aos="zoom-in-up" data-aos-duration="900" data-aos-offset="100"
+                            data-aos-delay="200"><img src="./img/booking/4.jpg" alt=""></div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <form id="booking">
+                        <div class="form-group">
+                            <label for="customerName">Tên Khách Hàng</label>
+                            <input type="text" class="form-control" id="customerName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Số điện thoại</label>
+                            <input type="text" class="form-control" id="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="quantity">Số Lượng Vé</label>
+                            <input type="number" class="form-control" id="quantity" value="1" min="1" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Địa Điểm</label>
+                            <select class="form-control" id="location" required>
+                                <option value="380000">Hồ Trị An</option>
+                                <option value="380000">Hồ Dầu Tiếng</option>
+                                <option value="580000">Hồ Cốc</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="checkin">Check-in</label>
+                            <input type="datetime-local" class="form-control" id="checkin" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="checkout">Check-out</label>
+                            <input type="datetime-local" class="form-control" id="checkout" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="totalAmount">Thành Tiền</label>
+                            <input type="text" class="form-control" id="totalAmount" readonly>
+                        </div>
+                        <button class="btn btn-primary submit shadow-none border-0" onclick="placeOrder(event)">Đặt
+                            Ngay</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="notification"></div>
+
+    <div id="overlay"></div>
+
+    <div id="paymentModal">
+        <h3>Xác nhận thanh toán</h3>
+        <p>Số tiền: <span id="paymentAmount"></span></p>
+        <button class="btn btn-success" onclick="showBankOptions()">Có</button>
+        <button class="btn btn-secondary" onclick="closePaymentModal()">Thanh toán sau</button>
+    </div>
+
+    <div id="qrModal">
+        <h3>Quét mã QR để thanh toán</h3>
+        <img id="qrCode" src="" alt="QR Code" style="width: 200px;">
+        <p>Thời gian còn lại: <span id="countdown"></span></p>
+        <button class="btn btn-danger" onclick="closeQrModal()">Đã thanh toán</button>
+        <button class="btn btn-secondary" onclick="showBankOptions()">Quay lại</button>
+    </div>
+
+    <!-- Footer Start -->
+    <footer>
+        <div class="head-box">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 col-md-12">
+                        <h2>Bạn đã sẵn sàng cho chuyến vi vu của mình ?</h2>
+                        <p>Cùng bắt đầu ViVu24h thôi !</p>
+                    </div>
+                    <div class="col-lg-5 col-md-12">
+                        <a href="#booking"><button class="float-lg-end">BẮT ĐẦU NGAY</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="content">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h3>DỊCH VỤ CỦA VIVU24H</h3>
+                        <ul>
+                            <li><a href="./User-PG_HoDauTieng.html">Gói Cắm Trại Hồ Dầu Tiếng</a></li>
+                            <li><a href="./User-PG_HoTriAn.html">Gói Cắm Trại Hồ Trị An</a></li>
+                            <li><a href="./User-PG_HoCoc.html">Gói Cắm Trại Hồ Cốc</a></li>
+                        </ul>
+
+                        <h3>THÔNG TIN LIÊN HỆ</h3>
+                        <h4>VIVU 24H - CẦU NỐI GIỮA CÁC BẠN VÀ THIÊN NHIÊN</h4>
+                        <ul>
+                            <li><a href="./User-AboutUs.html">Giới Thiệu</a></li>
+                            <li><a href="./User-Contact.html">Liên Hệ</a></li>
+                            <li><a href="./User-FeedBack.html">Phản Hồi</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="col-lg-4">
+                        <h3>ĐIỂM ĐẾN VIVU24H</h3>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.0624766960527!2d106.62628677488297!3d10.806526989344038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752be2853ce7cd%3A0x4111b3b3c2aca14a!2zMTQwIMSQLiBMw6ogVHLhu41uZyBU4bqlbiwgVMOieSBUaOG6oW5oLCBUw6JuIFBow7osIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1717316103417!5m2!1svi!2s"
+                            width="100%" height="300" style="border:0; border-radius: 6px;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="col-lg-4">
+                        <h3>THEO DÕI FANPAGE VIVU24H</h3>
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FDhCongThuongHCM&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+
+
+
+    <!-- JS -->
+    <script src="./main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script>
+        document.getElementById('quantity').addEventListener('input', calculateTotal);
+        document.getElementById('location').addEventListener('change', calculateTotal);
+        document.getElementById('checkin').addEventListener('input', calculateTotal);
+        document.getElementById('checkout').addEventListener('input', calculateTotal);
+
+        function calculateTotal() {
+            const quantity = parseInt(document.getElementById('quantity').value, 10);
+            const locationPrice = parseInt(document.getElementById('location').value, 10);
+            const checkin = new Date(document.getElementById('checkin').value);
+            const checkout = new Date(document.getElementById('checkout').value);
+
+            let total = quantity * locationPrice;
+            if (checkin && checkout) {
+                const timeDiff = checkout - checkin;
+                const days = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
+                const hours = (timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60);
+                if (days > 1) {
+                    total *= days;
+                }
+                if (days > 0 && hours > 1) {
+                    total += 0.3 * (locationPrice * quantity);
+                }
+            }
+            document.getElementById('totalAmount').value = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(total).replace('₫', 'VND');
+        }
+
+
+        function placeOrder(event) {
+            event.preventDefault(); // Ngăn chặn hành động mặc định của thẻ a
+
+            const customerName = document.getElementById('customerName').value;
+            const phone = document.getElementById('phone').value;
+            const quantity = document.getElementById('quantity').value;
+            const location = document.getElementById('location').value;
+            const checkin = document.getElementById('checkin').value;
+            const checkout = document.getElementById('checkout').value;
+
+            const notification = document.getElementById('notification');
+
+            if (customerName && phone && quantity >= 1 && location && checkin && checkout) {
+                notification.className = 'success fade-in';
+                notification.innerText = 'Đã đặt vé thành công';
+                notification.style.display = 'block';
+                setTimeout(() => {
+                    notification.classList.add('fade-out');
+                    setTimeout(() => {
+                        notification.style.display = 'none';
+                        notification.className = '';
+                        showPaymentModal();
+                    }, 400);
+                }, 1000);
+            } else {
+                notification.className = 'error fade-in';
+                notification.innerText = 'Đặt vé không thành công';
+                notification.style.display = 'block';
+                setTimeout(() => {
+                    notification.classList.add('fade-out');
+                    setTimeout(() => {
+                        notification.style.display = 'none';
+                        notification.className = '';
+                    }, 500);
+                }, 5000);
+            }
+        }
+
+        function showPaymentModal() {
+            const totalAmount = document.getElementById('totalAmount').value;
+            document.getElementById('paymentAmount').innerText = totalAmount;
+            document.getElementById('overlay').style.display = 'block';
+            document.getElementById('paymentModal').style.display = 'block';
+        }
+
+        function closePaymentModal() {
+            document.getElementById('overlay').style.display = 'none';
+            document.getElementById('paymentModal').style.display = 'none';
+        }
+        
+
+        function showBankOptions() {
+            document.getElementById('paymentModal').style.display = 'none';
+            const qrModal = document.getElementById('qrModal');
+            qrModal.innerHTML = `
+                <h3>Quét mã QR để thanh toán</h3>
+                <div>
+                    <img class="bank-logo" src="./img/feedback/banking-logo/logo-techcombank.jpg" alt="techcombank" onclick="showQrCode('techcombank')">
+                    <img class="bank-logo" src="./img/feedback/banking-logo/logo-vietcombank.jpg" alt="Vietcombank" onclick="showQrCode('vietcombank')">
+                    <img class="bank-logo" src="./img/feedback/banking-logo/logo-momo.png" alt="Mo Mo" onclick="showQrCode('momo')">
+                </div>
+                <button class="btn btn-danger" onclick="closeQrModal()">Đóng</button>
+                <button class="btn btn-secondary" onclick="showBankOptions()">Quay lại</button>
+            `;
+            qrModal.style.display = 'block';
+        }
+
+        function showQrCode(bank) {
+            let qrSrc = '';
+            switch (bank) {
+                case 'techcombank':
+                    qrSrc = './img/feedback/QR-thanh_toan/QR-thanh_toan_techcombank.jpg'; // Thay đổi đường dẫn đến hình ảnh mã QR của bạn
+                    break;
+                case 'vietcombank':
+                    qrSrc = './img/feedback/QR-thanh_toan/QR-thanh_toan.jpg';
+                    break;
+                case 'momo':
+                    qrSrc = './img/feedback/QR-thanh_toan/QR-thanh_toan_momo.jpg';
+                    break;
+            }
+            document.getElementById('qrModal').innerHTML = `
+                <h3>Quét mã QR để thanh toán</h3>
+                <img id="qrCode" src="${qrSrc}" alt="QR Code" style="width: 200px;">
+                <p>Thời gian còn lại: <span id="countdown">03:00</span></p>
+                <button class="btn btn-danger" onclick="closeQrModal()">Đã thanh toán</button>
+                <button class="btn btn-secondary" onclick="showBankOptions()">Quay lại</button>
+            `;
+            startCountdown(180); // Bắt đầu đếm ngược 3 phút (180 giây)
+        }
+
+        function closeQrModal() {
+            document.getElementById('overlay').style.display = 'none';
+            document.getElementById('qrModal').style.display = 'none';
+        }
+
+        function startCountdown(seconds) {
+            const countdownElem = document.getElementById('countdown');
+            const interval = setInterval(() => {
+                const minutes = Math.floor(seconds / 60);
+                const secs = seconds % 60;
+                countdownElem.innerText = `${minutes.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+                seconds--;
+                if (seconds < 0) {
+                    clearInterval(interval);
+                    alert('Thời gian thanh toán đã hết!');
+                    closeQrModal();
+                }
+            }, 1000);
+        }
+
+        window.onload = calculateTotal;
+    </script>
+    <!-- JS -->
+    <!-- Section Book End -->
+    }

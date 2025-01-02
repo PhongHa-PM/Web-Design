@@ -1,0 +1,16 @@
+.gallary{
+    background: white;
+    margin-top: 50px;
+    height: fit-content;
+}
+
+.gallary .container{
+    height: 100%;
+    border-radius: 16px;
+}
+
+.gallary img{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+}

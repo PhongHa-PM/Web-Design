@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+}
+
+:root{
+    /* Colors */
+    --primary-color: #ffa500;
+    --second-dark-color: #004829;
+    --second-light-color: #245C44;
+    --primary-linght-color: white;
+    --primary-dark-color: black;
+    /* Font Size */
+    --small-font: 12px;
+    --medium-font: 14px;
+    --large-font: 16px;
+    --extra-large-font: 18px;
+    /* Font Weight */
+    --font-light: 300;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+    --font-extra-bold: 800;
+    --font-black: 900;
+    /* Padding */
+    --small-padding: 10px;
+    --medium-padding: 20px;
+    --large-padding: 30px;
+    --extra-large-padding: 40px;
+    /* background-color */
+    --bg-color-white: #f9f9f9;
+    --main-dark-bg-color: orange;
+    --main-light-bg-color: rgb(255, 193, 79);
+    --bg-dark-color: #3d3d3d;
+}
+
+/* all */
+.active-nav{
+    background: var(--main-dark-bg-color);
+    color: #fff;
+}
+/* all */
+/* Navbar Start */
+#navbar{
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(7px);
+}
+
+.img-logo{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#logo{
+    font-size: 36px;
+    font-weight: 550;
+    color: var(--primary-dark-color);
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+}
+span{
+    color: var(--primary-color);
+    font-weight: 600;
+}
+.navbar-toggler span{
+    color: var(--primary-color);
+}
+.navbar-nav{
+    margin-left: 20px;
+}
+.nav-item .nav-link{
+    font-size: 14px;
+    font-weight: 550;
+    color: var(--primary-dark-color);
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+.nav-item .nav-link:hover{
+    background: var(--main-light-bg-color);
+    color: var(--primary-linght-color);
+}
+#navbar .btn-primary{
+    font-size: 12px;
+    border-radius: 16px;
+    height: 100%;
+    background: var(--second-dark-color);
+    color: var(--primary-linght-color);
+    border: none;
+    &:hover{
+        background: var(--main-dark-bg-color);
+    }
+}
+
+.dropdown-menu{
+    width: 200px;
+    border: none;
+    background: #c7c7c7;
+    padding: 5px;
+}
+
+
+/* Navbar End */

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Vivu 24h Camping</title>
+    <!-- Font Awesome Boxicon Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/admin.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./Admin-AdminHome.html" id="logo"><img class="img-logo" src="/img/logo.jpg"
+                    alt="">
+                <a class="navbar-brand" href="./Admin-AdminHome.html">Admin</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Admin</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item dropdown d-block ">
+                                <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class='bx bx-bell'></i>
+                                    <p class="bell item-text ms-2 m-0">Thông báo</p>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class='bx bxs-user-circle icon'></i>
+                                            <div class="content">
+                                                <div class="name-text-wrapper">
+                                                    <span class="name">Toàn Châu</span>
+                                                    <span class="text">Vừa thay đổi thông tin đơn hàng tù Hồ </span>
+                                                </div>
+                                                <div class="time">1 giờ 45 phút trước</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class='bx bxs-user-circle icon'></i>
+                                            <div class="content">
+                                                <div class="name-text-wrapper">
+                                                    <span class="name">Hà Huy Phong</span>
+                                                    <span class="text">Đã đặt tour Hồ Trị An</span>
+                                                </div>
+                                                <div class="time">2 giờ trước</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class='bx bxs-user-circle icon'></i>
+                                            <div class="content">
+                                                <div class="name-text-wrapper">
+                                                    <span class="name">Phạm Minh Tuấn</span>
+                                                    <span class="text">Thanh toán qua ApplePay</span>
+                                                </div>
+                                                <div class="time">3 giờ 10 phút trước</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class='bx bxs-user-circle icon'></i>
+                                            <div class="content">
+                                                <div class="name-text-wrapper">
+                                                    <span class="name">Jack Any</span>
+                                                    <span class="text">Yêu cầu thay đổi thông tin đơn hàng </span>
+                                                </div>
+                                                <div class="time">7 giờ trước</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown d-block">
+                                <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class='bx bx-message-rounded-dots'></i>
+                                    <p class=" mess item-text m-0">Tin nhắn</p>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-left">
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class='bx bxs-user-circle icon mt-0'></i>
+                                            <div class="info">
+                                                <p class="name m-0">Toàn Châu</p>
+                                                <p class="text m-0">Bạn: Mình xin được trả lời bạn như sau </p>
+                                                <p class="time mt-0">1 phút trước</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class='bx bxs-user-circle icon mt-0'></i>
+                                            <div class="info m-0">
+                                                <p class="name m-0">Jack Any</p>
+                                                <p class="text m-0">Jack: Shop cho em hỏi, tour đi Trị An</p>
+                                                <p class="time m-0">1 phút trước</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sidebar-out nav-item"><a class="nav-link" href="./Admin-QL_Booking.html"><i
+                                        class='bx bx-home'></i><span class="item-text ms-2">Trang Chính</span></a></li>
+                            <li class="sidebar-out nav-item"><a class="nav-link" href="./Admin-Addproduct.html"><i
+                                        class='bx bx-book-bookmark'></i><span class="item-text ms-2">Quản lí sản
+                                        phẩm</span></a></li>
+                            <li class="sidebar-out nav-item"><a class="nav-link" href="#"><i
+                                        class='bx bx-history'></i><span class="item-text ms-2">Lịch sử</span></a></li>
+                            <li class="sidebar-out nav-item"><a class="nav-link" href="./Admin-Feedback.html"><i
+                                        class='bx bx-bar-chart'></i><span class="item-text ms-2">Đánh giá</span></a>
+                            </li>
+                            <li class="nav-item dropdown d-block ">
+                                <a class="nav-link dropdown-toggle d-flex justify-content-center align-items-center"
+                                    href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class='bx bxs-user-circle'></i>
+                                    <p class="ms-2 m-0">Phạm Minh Tuấn</p>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#"><i class='bx bx-info-circle'
+                                                style="margin-right: 5px;"></i>Thông Tin</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class='bx bx-cog'
+                                                style="margin-right: 5px;"></i>Cài Đặt</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item active-dr" style="color: red; background: none;"
+                                            href="./Admin-Login.html"><i class='bx bx-log-out'
+                                                style="margin-right: 5px;"></i>Đăng Xuất</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+    </nav>
+    <section class="Admin container-fluid mt-5 pt-3">
+        <div class="col-md-3 col-lg-2 mt-5 sidebar p-3">
+            <button id="toggle-btn" class="btn btn-secondary"><i class="fas fa-bars"></i></button>
+            <ul class="list-unstyled">
+                <li><a href="/User-index.html"><i class='bx bx-home'></i><span class="item-text ms-2">Trang
+                            chính</span></a>
+                </li>
+                <li><a href="./Admin-QL_Booking.html"><i class='bx  bx-folder'></i><span class="item-text ms-2">Quản lí
+                            booking</span></a></li>
+                <li><a href="./Admin-Feedback.html"><i class='bx bx-bar-chart'></i><span class="item-text ms-2">Đánh
+                            giá</span></a></li>
+                <li><a href="./Admin-Addproduct.html"><i class='bx bx-book-bookmark'></i><span
+                            class="item-text ms-2">Quản lí
+                            trang chính</span></a></li>
+
+            </ul>
+        </div>
+        <div class="col-md-9 col-lg-10 mt-4 content-main">
+            <div class="row g-3">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <a href="#" class="box text-decoration-none">
+                        <div class="d-flex align-items-center">
+                            <div class="box-icon me-3"><i class='bx bx-dollar' style="color: rgb(240, 166, 6);"></i>
+                            </div>
+                            <div class="box-text">
+                                <h6 class="mb-0">Doanh Thu</h6>
+                                <p class="mb-0">67.224.111 VND</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <a href="./Admin-QL_Booking.html" id="booking-management" class="box text-decoration-none">
+                        <div class="d-flex align-items-center">
+                            <div class="box-icon me-3"><i class='bx bx-folder' style="color: rgb(21, 136, 190);"></i>
+                            </div>
+                            <div class="box-text">
+                                <h6 class="mb-0">Quản lí Booking</h6>
+                                <p class="mb-0">3 đơn</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <a href="./Admin-Feedback.html" class="box text-decoration-none">
+                        <div class="d-flex align-items-center">
+                            <div class="box-icon me-3"><i class='bx bx-chat' style="color: rgb(228, 62, 62);"></i>
+                            </div>
+                            <div class="box-text">
+                                <h6 class="mb-0">Đánh Giá</h6>
+                                <p class="mb-0">4</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <a href="./Admin-Addproduct.html" class="box text-decoration-none">
+                        <div class="d-flex align-items-center">
+                            <div class="box-icon me-3"><i class='bx bx-store-alt' style="color: green;"></i></div>
+                            <div class="box-text">
+                                <h6 class="mb-0">Quản lí trang chính</h6>
+                                <p class="mb-0">3</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="chart-box mt-4 p-3">
+                <div class="row">
+                    <div class="col-md-6">
+                        <canvas id="salesChart"></canvas>
+                    </div>
+                    <div class="col-md-6">
+                        <canvas id="revenueChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.getElementById('toggle-btn').addEventListener('click', function () {
+            const sidebar = document.querySelector('.sidebar');
+            const content = document.querySelector('.content-main');
+            sidebar.classList.toggle('open');
+            sidebar.classList.toggle('closed');
+            content.classList.toggle('expanded');
+        });
+        // Chart.js configuration
+        document.addEventListener("DOMContentLoaded", function () {
+            var ctx = document.getElementById('salesChart').getContext('2d');
+            var salesData = {
+                labels: ['Hồ Trị An', 'Hồ Cốc ', 'Hồ Dầu Tiếng'],
+                datasets: [{
+                    data: [500, 200, 400],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.7)',
+                        'rgba(54, 162, 235, 0.7)',
+                        'rgba(255, 206, 86, 0.7)'
+                    ]
+                }]
+            };
+            var salesChart = new Chart(ctx, {
+                type: 'pie',
+                data: salesData,
+                options: {
+                    responsive: false, // keep it false to manually control the size
+                    maintainAspectRatio: false, // prevent automatic resizing
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'right', // move labels to the right
+                            align: 'end', // align to the start (top)
+                            labels: {
+                                boxWidth: 30, // width of the color box
+                                padding: 20, // padding between labels
+                                font: {
+                                    size: 10 // font size
+                                }
+                            }
+                        },
+                        title: {
+                            display: true,
+                            text: 'Thống Kê',
+                            align: 'center',
+                            font: {
+                                size: 20
+                            }
+                        },
+                        datalabels: {
+                            formatter: (value, ctx) => {
+                                let sum = 0;
+                                let dataArr = ctx.chart.data.datasets[0].data;
+                                dataArr.forEach(data => {
+                                    sum += data;
+                                });
+                                let percentage = (value * 100 / sum).toFixed(2) + "%";
+                                return percentage;
+                            },
+                            color: '#fff',
+                            font: {
+                                size: 18
+                            }
+                        }
+                    }
+                },
+                plugins: [ChartDataLabels]
+            });
+        });
+        var revenueData = {
+            labels: ['Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6', 'Tháng 7', 'Tháng 8', 'Tháng 9', 'Tháng 10', 'Tháng 11', 'Tháng 12'],
+            datasets: [{
+                label: 'Doanh thu theo tháng',
+                data: [9, 8, 7, 2, 4, 5, 8, 6, 4, 11, 8, 9],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.7)',
+                    'rgba(54, 162, 235, 0.7)',
+                    'rgba(255, 206, 86, 0.7)',
+                    'rgba(75, 192, 192, 0.7)',
+                    'rgba(153, 102, 255, 0.7)',
+                    'rgba(255, 159, 64, 0.7)',
+                    'rgba(255, 99, 132, 0.7)',
+                    'rgba(54, 162, 235, 0.7)',
+                    'rgba(255, 206, 86, 0.7)',
+                    'rgba(75, 192, 192, 0.7)',
+                    'rgba(153, 102, 255, 0.7)',
+                    'rgba(255, 159, 64, 0.7)'
+                ]
+            }]
+        };
+
+        // Tạo biểu đồ đường
+        var ctx = document.getElementById('revenueChart').getContext('2d');
+        var revenueChart = new Chart(ctx, {
+            type: 'line',
+            data: revenueData,
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                legend: {
+                    display: false
+                }
+            }
+        });
+        var toggleBtn = document.querySelector('.toggle-btn');
+        var sidebar = document.querySelector('.sidebar');
+        var content = document.querySelector('.content');
+
+        toggleBtn.addEventListener('click', function () {
+            sidebar.classList.toggle('closed');
+            content.classList.toggle('expanded');
+        });
+    </script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0/dist/chartjs-plugin-datalabels.min.js"></script>
+</body>
+
+</html>

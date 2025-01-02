@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+}
+
+:root{
+    /* Colors */
+    --primary-color: #ffa500;
+    --second-dark-color: #004829;
+    --second-light-color: #245C44;
+    --primary-linght-color: white;
+    --primary-dark-color: black;
+    /* Font Size */
+    --small-font: 12px;
+    --medium-font: 14px;
+    --large-font: 16px;
+    --extra-large-font: 18px;
+    /* Font Weight */
+    --font-light: 300;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+    --font-extra-bold: 800;
+    --font-black: 900;
+    /* Padding */
+    --small-padding: 10px;
+    --medium-padding: 20px;
+    --large-padding: 30px;
+    --extra-large-padding: 40px;
+    /* background-color */
+    --bg-color-white: #f9f9f9;
+    --main-dark-bg-color: orange;
+    --main-light-bg-color: rgb(255, 193, 79);
+    --bg-dark-color: #3d3d3d;
+}
+
+/* all */
+.active-nav{
+    background: var(--main-dark-bg-color);
+    color: #fff;
+}
+/* all */
+
+/* About Start */
+.about{
+    font-family: 'Times New Roman', Times, serif;
+    height: 800px;
+    padding: 50px;
+    margin-top: 50px;
+    background: #f9f9f9;
+}
+.about .container{
+    height: 100%;
+}
+.about h1{
+    margin: 10px;
+}
+.about .card{
+    border-radius: 10px;
+}
+.about .card img{
+    height: 100%;
+    border-radius: 10px;
+}
+.about h2{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.about p{
+    font-weight: 500;
+}
+#about-btn{
+    width: 150px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background: var(--primary-color);
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 550;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#about-btn:hover{
+    width: 170px;
+    transition: 0.8s;
+    transform: scale(1.05);
+}
+
+/* About End */

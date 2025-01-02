@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+}
+
+:root{
+    /* Colors */
+    --primary-color: #ffa500;
+    --second-dark-color: #004829;
+    --second-light-color: #245C44;
+    --primary-linght-color: white;
+    --primary-dark-color: black;
+    /* Font Size */
+    --small-font: 12px;
+    --medium-font: 14px;
+    --large-font: 16px;
+    --extra-large-font: 18px;
+    /* Font Weight */
+    --font-light: 300;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+    --font-extra-bold: 800;
+    --font-black: 900;
+    /* Padding */
+    --small-padding: 10px;
+    --medium-padding: 20px;
+    --large-padding: 30px;
+    --extra-large-padding: 40px;
+    /* background-color */
+    --bg-color-white: #f9f9f9;
+    --main-dark-bg-color: orange;
+    --main-light-bg-color: rgb(255, 193, 79);
+    --bg-dark-color: #3d3d3d;
+}
+
+/* all */
+.active-nav{
+    background: var(--main-dark-bg-color);
+    color: #fff;
+}
+/* all */
+
+.book .container{
+    height: fit-content;
+    padding-bottom: 30px;
+}
+
+.book img{
+    width: 100%;
+    z-index: 0;
+}
+
+.book form input,
+.book form select{
+    padding: 10px;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+
+form label{
+    margin-top: 10px;
+    margin-left: 10px;
+    color: rgb(104, 104, 104);
+    font-size: 14px;
+    
+}
+
+.book .submit{
+    width: 160px;
+    font-size: 16px;
+    font-weight: 550;
+    background: var(--primary-color);
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s;
+    border: none;
+}
+.book .submit:hover{
+    width: 170px;
+}
+
+#notification {
+    display: none;
+    position: fixed;
+    top: 90px;
+    right: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+#notification.success {
+    background: none;
+    border: 2px solid var(--main-dark-bg-color);
+    color: var(--primary-color);
+}
+#notification.error {
+    border: 2px solid #dc3545;
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.fade-in {
+    display: block;
+    animation: fadeIn 0.5s forwards;
+}
+.fade-out {
+    animation: fadeOut 0.5s forwards;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+#paymentModal, #qrModal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    width: fit-content;
+    text-align: center;
+    border-radius: 16px;
+}
+
+#paymentModal h3, #qrModal h3{
+    font-weight: bold;
+}
+
+#paymentModal span{
+    font-size: 30px;
+}
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+.bank-logo {
+    width: 30%;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    &:hover{
+        transform: scale(1.08);
+    }
+}
+
+@media only screen and (max-width: 991px){
+    #notification {
+        top: 10px;
+    }
+}
+

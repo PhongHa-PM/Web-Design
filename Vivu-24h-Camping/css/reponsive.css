@@ -1,0 +1,326 @@
+@media only screen and (max-width: 991px) {
+    /* nav-bar */
+    #navbar{
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+    }
+    .navbar form input{
+        width: 300px;
+    }
+    .navbar form{
+        width: fit-content;
+        margin: 0 auto;
+    }
+    /* nav-bar */
+    /* slider */
+
+    section .container{
+        position: relative;
+        width: 100%;
+        height: 500px;
+        background: #f5f5f5;
+        box-shadow: 0 30px 50px #dbdbdb;
+    }
+    .slide .item:nth-child(1),
+    .slide .item:nth-child(2){
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+        border-radius: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .slide .item:nth-child(3){
+        left: 70%;
+    }
+    .slide .item:nth-child(4){
+        left: calc(70% + 100px);
+    }
+    .slide .item:nth-child(5){
+        left: calc(70% + 200px);
+    }
+
+    /* here n = 0, 1, 2, 3,... */
+    .slide .item:nth-child(n + 6){
+        left: calc(50% + 660px);
+        opacity: 0;
+    }
+
+    .item .content{
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        width: fit-content;
+        text-align: left;
+        color: #eee;
+        transform: translate(0, -50%);
+        font-family: system-ui;
+        display: none;
+    }
+
+    .item .content .des{
+        width: 250px;
+    }
+    .button{
+        width: 100%;
+        left: -3px;
+        text-align: center;
+        position: absolute;
+        bottom: 20px;
+    }
+    /* slider */
+
+    /* book */
+    .card img{
+        width: 100%;
+        height: 200px;
+    }
+    .card .card-body ul li{
+        list-style:inside ;
+        font-style: italic;
+        font-size: 20px;
+    }
+
+    .card .card-body{
+        height: 500px;
+    }
+    .card .card-body h3{
+        font-size: 20px;
+    }
+
+    .card {
+        height: 580px;
+    }
+    /* book */
+
+    /* service */
+
+    .services{
+        margin: 30px 0;
+        background: var(--bg-color-white);
+        height: 2900px;
+    }
+    .services .card{
+        height: 400px;
+    }
+
+    .services .card img{
+        border-radius: 4px;
+        width: 100%;
+        height: 100%;
+    }
+    .services .card .card-body h4{
+        font-weight: 600;
+    }
+    .services .card .card-body{
+        text-align: center;
+    } 
+
+    /* service */
+
+    /* Section Banner */
+
+    .super-deal-section {
+        min-height: 350px;
+    }
+    .super-deal {
+        margin-top: 0px;
+        margin-bottom: 15px;
+    }
+    .super-deal h1 {
+        font-weight: 600;
+        font-size: 24px;
+    }
+    /* Section Banner */
+
+    /* gallary */
+    .gallary .card img{
+        width: 100%;
+        border-radius: 10px;
+        transition: 0.5s;
+    }
+    /* gallary */
+
+    /* Admin */
+    .page-content-wrapper .navbar-collapse{
+        display: none;
+    }
+    /* Admin */
+
+}
+
+@media only screen and (min-width: 991px){
+    .card img{
+        width: 100%;
+        height: 250px;
+    }
+
+}
+
+
+@media only screen and (max-width: 768px){
+    .card img{
+        width: 100%;
+        height: 280px;
+    }
+    .card .card-body ul li{
+        list-style:inside ;
+        font-style: italic;
+        font-size: 16px;
+    }
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    
+    /*  */
+    /* .card img{
+        width: 100%;
+        height: 280px;
+    } */
+
+    .card .card-body ul li{
+        list-style:inside ;
+        font-style: italic;
+        font-size: 16px;
+    }
+
+    .card .card-body h2{
+        color: var(--primary-color);
+        font-style: italic;
+        text-align: center;
+        height: 70px;
+    }
+
+    .card .card-body{
+        height: 300px;
+    }
+    /* service */
+    .services{
+        height: 900px;
+    }
+
+    .services .card-body{
+        height: 180px;
+    }
+    .services .card img{
+        border-radius: 4px;
+        width: 100%;
+        height: 190px;
+    }
+    /* gallary */
+    .gallary{
+        background: white;
+        margin-top: 50px;
+        height: fit-content;
+    }
+    
+    /* gallary */
+    /* banner */
+    .banner{
+        height: fit-content;
+    }
+
+    .banner ,.container{
+        height: fit-content;
+    }
+    .banner-img{
+        width: 100%;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 16px;
+    }
+    /* banner */
+
+    /* Admin */
+    #sidebar-wrapper {
+        margin-left: 0;
+      }
+    
+      #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+      }
+    
+      #wrapper.toggled #sidebar-wrapper {
+        margin-left: -15rem;
+      }
+    /* Admin */
+
+}
+
+@media (max-width:765px){
+    .about{
+        padding: 0;
+    }
+    .book{
+        height: 1040px;
+        padding: 0;
+    }
+    
+    .main-text h1{
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    /* banner */
+    .banner{
+        height: 300px;
+    }
+    .banner-img{
+        height: 200px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 16px;
+    }
+    /* banner */
+
+    .about{
+        height: 900px;
+    }
+
+    .item .content{
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        width: fit-content;
+        text-align: left;
+        color: #eee;
+        transform: translate(0, -50%);
+        font-family: system-ui;
+        display: none;
+    }
+
+    .item .content .name{
+        font-size: 30px;
+        width: 250px;
+    }
+
+    .item .content .des{
+        font-size: 15px;
+        width: 200px;
+    }
+    /* FeedBack */
+    .feedback-banner h1{
+        font-size: 30px;
+    }
+    .feedback-banner .content-banner p{
+        font-size: 14px;
+    }
+    .feedback-banner button{
+        max-width: 100%;
+        min-width: 150px;
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+    /* FeedBack */
+}
+

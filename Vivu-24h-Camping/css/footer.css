@@ -1,0 +1,67 @@
+/* Footer Start */
+footer{
+    height: fit-content;
+    background: var(--second-light-color);
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+.head-box{
+    background: var(--second-dark-color);
+    position: relative;
+    top: -40px;
+    margin: 0 auto;
+    width: 90%;
+    border-radius: 16px;
+    height: fit-content;
+}
+
+.head-box button{
+    width: 200px;
+    height: 60px;
+    border-radius: 14px;
+    background: var(--main-light-bg-color);
+    color: #f9f9f9;
+    font-weight: bold;
+    &:hover{
+        background: var(--main-dark-bg-color);
+    }
+}
+
+.head-box h2{
+    margin-top: 10px;
+    color: var(--primary-color);
+    font-size: 30px;
+}
+
+.head-box p{
+    font-size: 20px;
+    color: #f9f9f9;
+}
+
+footer .content{
+    background: none;
+}
+
+footer .content h3{
+    font-weight: bold;
+    font-size: 20px;
+    color: #f4f4f4;
+}
+footer .content h4{
+    font-weight: 200;
+    color: #f4f4f4;
+    font-size: 20px;
+}
+
+footer .content li a,
+footer .content li{
+    list-style: none;
+    color: #fff;
+}
+footer .content li{
+    line-height: 2.5;
+}
+footer .content li a:hover{
+    color: var(--primary-color);
+}
+/* Footer End */
